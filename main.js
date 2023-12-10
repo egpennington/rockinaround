@@ -1,8 +1,8 @@
 const btn = document.getElementById("btn")
 
-btn.addEventListener("click", function() {
-    console.log("play this song");
-}
+btn.addEventListener("click", ()=> {
+    console.log("play this song")
+})
 
 function playSong(videoId) {
     console.log("song playing")
