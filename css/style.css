@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0F0F0F;
+    font-family: 'Mountains of Christmas', serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #DEEAEE;
+    text-align: center;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.player {
+  background-color: #DEEAEE;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5px;
+  z-index: 1;
+}
+  
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 20% 50%, #fff 10%, transparent 30%), radial-gradient(circle at 80% 50%, #fff 10%, transparent 30%);
+  background-size: 50px 50px;
+  opacity: 0.3;
+}
+  
+button:hover::before {
+  animation: sparkle 1s infinite linear;
+}
+
+@keyframes sparkle {
+    to {
+      transform: translateX(100%);
+    }
+}
+  
+button i {
+  margin-left: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 10px;
+}
