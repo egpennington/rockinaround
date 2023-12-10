@@ -1,3 +1,9 @@
+const btn = document.getElementById("btn")
+
+btn.addEventListener("click", function() {
+    console.log("play this song");
+}
+
 function playSong(videoId) {
     console.log("song playing")
     const player = document.getElementById("player")
